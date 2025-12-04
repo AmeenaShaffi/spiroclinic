@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spiro Clinic - Tirur</title>
+  <style>
+    /* Reset and base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7f8;
+      color: #286a63;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+    /* Header */
+    header {
+      background-color: #286a63;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      justify-content: space-between;
+    }
+    header img {
+      height: 70px;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      font-weight: bold;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #1f524e;
+    }
+    /* Hero */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 350px;
+      background: url('https://images.unsplash.com/photo-1588776814546-1b7162b3f8b9?auto=format&fit=crop&w=1350&q=80') center center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 0 1px 8px rgba(0,0,0,0.6);
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      padding: 0 20px;
+    }
+    /* Intro */
+    .intro {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .intro h2 {
+      color: #286a63;
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+    }
+    .intro p {
+      color: #444;
+      font-size: 1rem;
+    }
+    /* Services */
+    .services {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .services h2 {
+      text-align: center;
+      color: #286a63;
+      margin-bottom: 25px;
+      font-size: 1.8rem;
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 20px;
+    }
+    .service-box {
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      transition: box-shadow 0.3s ease;
+    }
+    .service-box:hover {
+      box-shadow: 0 0 20px #286a63;
+    }
+    .service-box h3 {
+      color: #286a63;
+      margin-bottom: 10px;
+    }
+    /* Contact CTA */
+    .contact-cta {
+      max-width: 900px;
+      margin: 40px auto 60px auto;
+      background-color: #286a63;
+      color: white;
+      padding: 30px 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .contact-cta h2 {
+      margin-bottom: 15px;
+    }
+    .contact-cta a {
+      display: inline-block;
+      background: white;
+      color: #286a63;
+      font-weight: bold;
+      padding: 12px 30px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    .contact-cta a:hover {
+      background-color: #1f524e;
+      color: white;
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 15px 20px;
+      color: #666;
+      border-top: 1px solid #ddd;
+      background: #f4f7f8;
+    }
+    /* Responsive tweaks */
+    @media (max-width: 600px) {
+      nav {
+        font-size: 14px;
+      }
+      .hero {
+        font-size: 1.3rem;
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Spirologo1.png" alt="Spiro Clinic Logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Services.html">Services</a>
+      <a href="Contact.html">Contact Us</a>
+    </nav>
+  </header>
+  
+  <section class="hero" aria-label="Hospital banner">
+    Comprehensive Health Care at Spiro Clinic
+  </section>
+
+  <section class="intro" aria-label="About the hospital">
+    <h2>Welcome to Spiro Clinic, Tirur</h2>
+    <p>Spiro clinic provides expert medical services with advanced diagnostics, compassionate patient care, and the latest technologies. Serving Tirur and surrounding communities with excellence.</p>
+  </section>
+
+  <section class="services" aria-label="Hospital services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-box">
+        <h3>General Medicine Consultations</h3>
+        <p>Our experienced physicians provide thorough general medical consultations to diagnose, treat, and manage a wide range of acute and chronic conditions. We focus on personalized care, taking time to understand each patient’s unique health concerns and provide evidence-based treatment plans for optimal wellness.</p>
+      </div>
+      <div class="service-box">
+        <h3>Laboratory</h3>
+        <p>Spiro Clinic features a fully equipped laboratory offering accurate and timely diagnostic testing. Our lab services include blood tests, urine tests, and other pathology services essential for precise diagnosis and effective treatment monitoring.</p>
+      </div>
+      <div class="service-box">
+        <h3>Pharmacy</h3>
+        <p>Our on-site pharmacy dispenses prescribed medications with expert guidance to ensure safe and effective therapy. We stock a wide range of essential medicines and provide counseling on proper medication use and adherence.</p>
+      </div>
+      <div class="service-box">
+        <h3>Observation Ward</h3>
+        <p>The observation ward allows for short-term monitoring and care of patients requiring medical supervision before discharge or further treatment. Our trained staff provide continuous observation and timely medical interventions as needed to ensure patient safety.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-cta" aria-label="Contact call to action">
+    <h2>Need expert health care?</h2>
+    <p>Call us today to schedule your appointment.</p>
+    <a href="tel:">+91 73538 53511</a>
+  </section>
+
+<footer>
+  &copy; 2025 Spiro Clinic. All rights reserved.
+</footer>
+
+</body>
+</html>
