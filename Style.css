@@ -1,0 +1,168 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles with padding to avoid header overlapping */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff; /* White background */
+  color: #286a63;  /* Teal green text */
+  margin: 0;
+  padding-top: 120px; /* Equal to header height */
+}
+
+/* Fixed header so it stays on top */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120px; /* Fixed height */
+  background-color: #286a63;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  z-index: 9999; /* Stays on top */
+}
+
+/* Logo inside header */
+header img {
+  height: 80px;
+  width: auto;
+  display: block;
+  margin-right: 20px;
+}
+
+/* Navigation bar styles */
+nav {
+  display: flex;
+  align-items: center;
+  background: #1f524e;
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+/* Links inside navigation */
+nav a {
+  background-color: transparent;
+  color: white;
+  margin: 0 18px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+/* Hover effect for nav links */
+nav a:hover, nav a.active {
+  background-color: #1a433f;
+  text-decoration: none;
+}
+
+/* Main content */
+main {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Headings */
+h1, h2 {
+  color: #286a63;
+}
+
+/* Footer styling */
+footer {
+  background: #e6f0f0;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #286a63;
+  margin-top: 40px;
+}
+footer {
+  background-color: #1f524e; /* Dark teal similar to header nav */
+  color: white;
+  padding: 30px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.footer-about, .footer-links, .footer-contact {
+  flex: 1 1 250px;
+  min-width: 220px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 6px 0;
+  font-weight: 600;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 25px;
+  border-top: 1px solid #2e7a74;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Responsive: stack vertically on small screens */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+html, body {
+  height: 100%; /* Full height on HTML and Body */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Minimum full viewport height */
+}
+
+main {
+  flex: 1; /* Main content expands to fill available vertical space */
+}
+
+footer {
+  background-color: #1f524e; /* Dark teal */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
